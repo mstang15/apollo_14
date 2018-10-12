@@ -32,7 +32,6 @@ RSpec.describe "Astronauts Index" do
 
   it 'shows a list of space missions' do
     visit "/astronauts"
-
     expect(page).to have_content(@mission_1.title)
     expect(page).to have_content(@mission_2.title)
     expect(page).to have_content(@mission_3.title)
@@ -40,7 +39,6 @@ RSpec.describe "Astronauts Index" do
 
   it 'shows total time in space for each astronaut' do
     visit "/astronauts"
-
     expect(page).to have_content("Neil Armstrong spent 269 days in space.")
     expect(page).to have_content("John Doe spent 300 days in space.")
     expect(page).to have_content("Jane Doe spent 345 days in space.")
